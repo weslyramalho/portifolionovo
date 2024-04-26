@@ -9,6 +9,8 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
    --cor-de-div: #EAF2FD;
    --cor-de-caixa: #FFFFFF;
+   --cor-de-botao: #2A7AE4;
+   --cor-de-texto: #464646;
 
 }
 
@@ -19,9 +21,17 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+
+    h2,h3,h4{
+        color: var(--cor-de-texto);
+    }
+    p{
+        color: var(--cor-de-texto);
+    }
 }
 ol, ul,li {
     list-style: none;
+    color: var(--cor-de-texto);
 }
 a{
     text-decoration: none;
@@ -66,7 +76,7 @@ section.menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5px;
+    gap: 32px;
 }
 
 /*Sessão Title*/
@@ -167,25 +177,64 @@ section.academic{
     justify-content: center;
     padding: 16px;
     align-items: center;
+    h4{
+        color: var(--cor-de-texto);
+    }
+}
+.academic__title{
+    color: var(--cor-de-texto);
 }
 
-.academic__courses{
-    width: 368px;
-    height: 347px;
+.academic__courses__item__img__logo{
     background-color: var(--cor-de-caixa);
+    padding: 64px;
+    width: 190px;
+    
+}
+.academic__courses{
+    
 }
 /* experiência*/
 
 section.experience{
-    
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 16px;
+    padding: 64px;
     align-items: center;
+    gap: 36px;
 
 }
+.experience__section__title{
+    color: var(--cor-de-texto);
+}
 .experiencie__box{
-    
+    display: flex;
+    align-items: center;
+    gap: 10px;
   
+}
+.experiencie__box__rever{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.experiencia__botao--repo{
+    width: 116px;
+    height: 51px;
+    color: var(--cor-de-botao);
+    border-color: var(--cor-de-botao);
+    background-color: transparent;
+}
+.experiencia__botao--demo{
+    width: 105px;
+    height: 51px;
+    background-color: var(--cor-de-botao);
+    color: var(--cor-de-caixa);
+    border: none;
+}
+.experience__img{
+    width: 772px;
 }
 
 /*Contato*/
@@ -215,6 +264,18 @@ section.formcontato{
     border: none;
 
 }
+.formcontato__textarea{
+    width: 550px;
+    height: 133px;
+    border: none;
+}
+.formcontato__botao{
+    width: 165px;
+    height: 51px;
+    background-color: var(--cor-de-botao);
+    color: white;
+    border: none;
+}
 .formcontato__img{
    
 }
@@ -222,7 +283,19 @@ section.formcontato{
 /*footeer*/
 
 section.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
+}
+.footer__rodape{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    
+    
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
